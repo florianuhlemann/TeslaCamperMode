@@ -1,1 +1,103 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo';
+@import 'https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Prompt:300,400,700|Source+Sans+Pro:300,400,700|Varela+Round';
+html,body {
+    background-color: rgb(48,48,48);
+    margin: 0;
+    padding: 0;
+}
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Baloo', cursive;
+	color: #f6f6f6;
+	margin: 6rem 0;
+}
+
+div {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+a {
+	color: rgb(48,48,48);
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(168,133,116);
+	text-decoration: none;
+}
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #f0eae7;
+}
+.row.header {
+  font-weight: 700;
+  color: #f6f6f6;
+  background: rgb(168,133,116);
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+
+.center {
+	text-align: center;
+}
+
+h4 {
+  margin-top: -5rem;
+}
+
+.left-button, .right-button {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  border-style: none;
+  position: fixed;
+  padding: 8rem 8rem 0.75rem 8rem;
+}
+.left-button {
+  top: -4.3rem;
+  left: -10.0rem;
+  background-color: #27ae60;
+  color: #f6f6f6;
+  -webkit-transform: rotate(-45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(-45deg); /* IE 9 */
+          transform: rotate(-45deg); /* IE 10, Fx 16+, Op 12.1+ */
+}
+.right-button {
+  top: -4.9rem;
+  right: -9.95rem;
+  background-color: rgb(227,96,55);
+  color: #f6f6f6;
+  -webkit-transform: rotate(45deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(45deg); /* IE 9 */
+          transform: rotate(45deg); /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.subtitle {
+  margin-bottom: 2.8rem;
+}
